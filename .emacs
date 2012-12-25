@@ -23,17 +23,17 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
-;; ÑÕÉ«Ö÷Ìâ
+;; é¢œè‰²ä¸»é¢˜
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-deep-blue)
 
-;; ¿ìËÙ´ò¿ª.emacsÎÄ¼ş
+;; å¿«é€Ÿæ‰“å¼€.emacsæ–‡ä»¶
 (defun open-emacs-file()
   (interactive)
   (find-file "~/.emacs"))
 (global-set-key (kbd "C-c i") 'open-emacs-file)
 
-;; Íâ¹Û ×ÖÌå ±àÂëµÈ
+;; å¤–è§‚ å­—ä½“ ç¼–ç ç­‰
 (set-default-font "Consolas 12")
 (set-fontset-font "fontset-default" 'unicode '("Microsoft YaHei"))
